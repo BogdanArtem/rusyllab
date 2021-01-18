@@ -4,11 +4,11 @@
 
 
 def V(c):
-    return c in u"АЕЁИОУЫЭЮЯаеёиоуыэюя"
+    return c in u"АЕИОУЇЄЮЯаеёиоуыэюя"
 
 
 def C(c):
-    return c in u"БВГДЖЗКЛМНПРСТФХЦЧШЩбвгджзклмнпрстфхцчшщ"
+    return c in u"БВГҐДЖЗКЛМНПРСТФХЦЧШЩбвгґджзклмнпрстфхцчшщ"
 
 
 def S(c):
@@ -16,7 +16,7 @@ def S(c):
 
 
 def M(c):
-    return c in u"ЪЬъь"
+    return c in u"Ьь"
 
 
 def BEG(c):
@@ -562,7 +562,7 @@ def apply1(s):
 
 
 if __name__ == "__main__":
-    sx = split(u"спросил")
+    sx = split(u"спросив")
     print(u"|".join(sx))
 
 def split_word(word):
